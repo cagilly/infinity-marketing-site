@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en-IE">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Privacy and Cookies | Infinity Marketing</title>
+<meta name="description" content="How Infinity Marketing collects, uses and protects your information.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,500;1,600&display=swap">
+<link rel="stylesheet" href="site.css">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="canonical" href="https://www.infinitymarketing.ie/privacy.html">
+</head>
+<body>
+<div class="hero small t-contact">
+<img class="hero-img" src="img/hero-contact-1600.webp" srcset="img/hero-contact-800.webp 800w, img/hero-contact-1600.webp 1600w" sizes="100vw" decoding="async" fetchpriority="high" alt="">
+<div class="hero-wash"></div>
+<svg class="hero-loops" viewBox="0 0 100 100" aria-hidden="true"><g class="drift" fill="none" stroke="#F5B83D" stroke-width="0.25"><ellipse cx="50" cy="37" rx="15" ry="26"></ellipse><ellipse cx="50" cy="37" rx="15" ry="26" transform="rotate(120 50 54)"></ellipse><ellipse cx="50" cy="37" rx="15" ry="26" transform="rotate(240 50 54)"></ellipse></g></svg>
+<header class="wrap site-header">
+<a class="brand" href="index.html"><svg width="36" height="36" viewBox="0 0 100 100" aria-hidden="true"><g fill="none" stroke="#FFFFFF" stroke-width="5"><ellipse cx="50" cy="37" rx="15" ry="26"></ellipse><ellipse cx="50" cy="37" rx="15" ry="26" transform="rotate(120 50 54)"></ellipse><ellipse cx="50" cy="37" rx="15" ry="26" transform="rotate(240 50 54)"></ellipse></g></svg>Infinity Marketing</a>
+<button class="menu-btn" type="button" id="menu-btn" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"></path></svg></button>
+<nav class="nav" id="site-nav" aria-label="Main"><a href="growing-businesses.html">Growing businesses</a><a href="msp-marketing.html">MSPs and tech</a><a href="work.html">Work</a><a href="about.html">About</a><a class="btn btn-amber" href="contact.html">Book a call</a></nav>
+</header>
+<section class="wrap hero-inner">
+
+<h1 class="up">Privacy and cookies</h1>
+
+<p class="lead up3">How Infinity Marketing collects, uses and protects your information.</p>
+
+
+</section>
+</div>
+<section class="band" style="padding-top: 64px">
+<div class="wrap prose" style="max-width: 820px">
+<p class="note" style="margin-top: 0">Last updated: [date of launch]</p>
+<h2 class="h2">Who we are</h2>
+<p style="margin-top: 20px">This website is run by Infinity Marketing, based in Kildare, Ireland. [Registered company name and number, once registered.] For any question about your information, email cathy@infinitymarketing.ie or call 087 917 8561.</p>
+<h2 class="h2">What we collect</h2>
+<p style="margin-top: 20px">We only collect what you choose to send us through the forms on this site: your name, email address, and optionally your phone number, company name and message.</p>
+<h2 class="h2">Why we use it</h2>
+<p style="margin-top: 20px">We use your details to reply to your enquiry and, if you go on to work with us, to provide our services. Our legal basis is your consent when you submit a form, and our legitimate interest in responding to business enquiries. We do not sell your information or add you to marketing lists without asking.</p>
+<h2 class="h2">Who handles it</h2>
+<p style="margin-top: 20px">Form messages are delivered to us by FormSubmit (formsubmit.co), a form delivery service. Our email is hosted by Titan (titan.email). This website is hosted on GitHub Pages and uses fonts served by Google Fonts. These providers may process your information outside the European Economic Area under appropriate safeguards.</p>
+<h2 class="h2">How long we keep it</h2>
+<p style="margin-top: 20px">Enquiries that don't lead to work are deleted within 12 months. Client records are kept for as long as required for business and tax purposes.</p>
+<h2 class="h2">Your rights</h2>
+<p style="margin-top: 20px">You can ask to see, correct or delete the information we hold about you, or object to how we use it. Email cathy@infinitymarketing.ie and we will respond within one month. You also have the right to complain to the Data Protection Commission (dataprotection.ie).</p>
+<h2 class="h2" id="cookies">Cookies</h2>
+<p style="margin-top: 20px">This website does not use advertising or tracking cookies. If we add visitor statistics, we will use a privacy friendly tool that does not set cookies or identify you, and we will update this page.</p>
+</div>
+</section>
+
+<footer class="wrap site-footer">
+<span>Infinity Marketing · Kildare, Ireland · cathy@infinitymarketing.ie · 087 917 8561</span>
+<nav aria-label="Footer"><a href="#">LinkedIn</a><a href="privacy.html">Privacy</a><a href="privacy.html#cookies">Cookies</a></nav>
+</footer>
+<script>
+(function () {
+  var b = document.getElementById('menu-btn'), n = document.getElementById('site-nav');
+  if (b && n) b.addEventListener('click', function () {
+    var o = n.classList.toggle('open'); b.setAttribute('aria-expanded', o ? 'true' : 'false');
+  });
+  document.querySelectorAll('form.js-enquiry').forEach(function (f) {
+    var t = f.parentNode.querySelector('.thanks'), err = f.querySelector('.form-error');
+    f.addEventListener('submit', function (e) {
+      e.preventDefault();
+      if (!f.checkValidity()) { err.hidden = false; err.textContent = 'Please add your name, email and tick the consent box.'; return; }
+      err.hidden = true;
+      var done = function () { f.hidden = true; t.hidden = false; };
+      var btn = f.querySelector('button'), label = btn.textContent; btn.disabled = true; btn.textContent = 'Sending';
+      var data = {}; new FormData(f).forEach(function (v, k) { data[k] = v; });
+      data._template = 'table'; data._captcha = 'false';
+      fetch('https://formsubmit.co/ajax/cathy@infinitymarketing.ie', { method: 'POST', headers: { 'Content-Type': 'application/json', Accept: 'application/json' }, body: JSON.stringify(data) })
+        .then(function (r) { if (!r.ok) throw 0; return r.json(); })
+        .then(function (d) { if (d && (d.success === false || d.success === 'false')) throw 0; done(); })
+        .catch(function () { btn.disabled = false; btn.textContent = label; err.hidden = false; err.textContent = 'Your message did not send. Please email cathy@infinitymarketing.ie or call 087 917 8561.'; });
+    });
+  });
+})();
+</script>
+</body>
+</html>
