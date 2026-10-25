@@ -181,6 +181,7 @@ h1, h2, h3 { text-wrap: balance; margin: 0; }
 .ticks svg { flex: none; margin-top: 5px; }
 .example { margin: 18px 0 0; font-size: 14px; color: var(--cobalt); font-weight: 600; }
 .tiles { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 16px; margin-top: 32px; }
+.tiles.t4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
 .tile { background: var(--card); border-radius: 18px; padding: 24px 22px; box-shadow: 0 10px 30px -24px rgba(15,27,61,0.4); }
 .tile .badge { width: 46px; height: 46px; margin-bottom: 14px; }
 .tile h3 { font-size: 18px; font-weight: 700; color: var(--ink); }
@@ -229,7 +230,7 @@ h1, h2, h3 { text-wrap: balance; margin: 0; }
 @media (max-width: 900px) {
   .vcards, .why, .ways, .work-row, .work-row.flip, .tgrid, .cta-grid, .problems, .offer, .ticks, .plan, .two, .case { grid-template-columns: minmax(0, 1fr); }
   .work-row.flip .shot { order: 0; }
-  .tiles { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .tiles, .tiles.t4 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .steps { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .form .row { grid-template-columns: minmax(0, 1fr); }
   .cta, .plan { padding: 32px 22px; }
@@ -238,7 +239,7 @@ h1, h2, h3 { text-wrap: balance; margin: 0; }
   .hero-inner { padding-block: 56px 64px; }
   .why { gap: 28px; }
 }
-@media (max-width: 520px) { .tiles, .steps { grid-template-columns: minmax(0, 1fr); } }
+@media (max-width: 520px) { .tiles, .tiles.t4, .steps { grid-template-columns: minmax(0, 1fr); } }
 
 /* Page hero themes: same structure, distinct wash and infinity mark per page */
 .hero.t-home .hero-wash { background: linear-gradient(90deg, rgba(15,27,61,0.94) 0%, rgba(15,27,61,0.8) 45%, rgba(15,27,61,0.3) 100%); }
